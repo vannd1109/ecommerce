@@ -1,0 +1,177 @@
+.ecommerce{
+    height: 50px;
+    border: 1px solid rgb(207, 207, 207);
+    &--main{
+        margin: 0 15px 0 0;
+        height: 50px;
+    }
+    &__link{
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        position: relative;
+        &:hover{
+            color: #d51234;
+        }
+        &.active{
+            color: #030303;
+            font-weight: 700;
+            &:hover{
+                color: #d51234;
+            }
+        }
+
+        .broadcast-notifination{
+            position: absolute;
+            top: -8px;
+            right: -7px;
+            width: 8px;
+            height: 8px;
+        }
+    }
+    &__category{
+        // cursor: pointer;
+        border-right: 1px solid rgb(207, 207, 207);
+        height: 50px;
+        padding: 0 15px;
+
+        &--label{
+            display: block;
+            margin-left: 5px !important;
+            position: relative;
+            top: 1px;
+        }
+        &--box{
+            cursor: pointer;
+            height: 50px;
+            position: relative;
+        }
+        &--list{
+            position: absolute;
+            display: none;
+            top: 49px;
+            left: 0;
+            border: 1px solid #d51234;
+            background-color: white;
+            height: 360px;
+        }
+
+        &:hover{
+            background-color: #d51234;
+            color: white;
+
+            .ecommerce__category--list{
+                display: block;
+            }
+        }
+        &--item{
+            &:last-child{
+                border-bottom: none;
+            }
+
+            &-box{
+                padding-left: 15px;
+                border-right: 1px solid rgb(235, 235, 235);
+                cursor: pointer;
+            }
+            
+            &-right{
+                display: none !important;
+                margin-left: 10px;
+                font-size: 20px !important;
+                position: relative;
+                top: 2px;
+            }
+            &:hover{
+                .ecommerce__category--item-right{
+                    display: block !important;
+                }
+
+                .category__child--list{
+                    display: block !important;
+                }
+                .ecommerce__category--list{
+                    background-color: red;
+                }
+            }
+
+            &-link{
+                color: black;
+                text-transform: none;
+                margin-left: 15px;
+                height: 50px;
+                width: 210px;
+
+                &:hover{
+                    color: #d51234;
+                    font-weight: bold;
+                }
+            }
+
+            // category__child--list
+            .category__child{
+                &--list{
+                display: none;
+                min-width: 230px;
+                height: 50px;
+                padding-top: 5px;
+                position: absolute;
+                top: 0;
+                left: 270px;
+
+                &:after{
+                    position: absolute;
+                    top: -1px;
+                    content: "";
+                    left: 1px;
+                    height: 360px;
+                    width: 100%;
+                    z-index: 1;
+                    border: 1px solid #d51234;
+                    border-left:1px solid rgb(207, 207, 207);
+                }
+                }
+                &--item{
+                    z-index: 2;
+                    position: relative;
+                    margin-bottom: 2px;
+
+                    &.label{
+                        a{
+                            color: rgb(5, 5, 5);
+                            padding-left: 15px;
+                            text-transform: uppercase;
+                            font-weight: bold;
+
+                            &:hover{
+                                color: #d51234;
+                            }
+                        }
+                    }
+                }
+                &--link{
+                    text-transform: none;
+                    color: black;
+                    font-size: 13px;
+                    display: block;
+                    padding-left: 25px;
+                    &:hover{
+                        color: #d51234;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .category__child--list:nth-child(3){
+                left: 499px;
+            }
+        }
+        &--icon{
+            width: 30px;
+            img{
+                width: 25px;
+            }
+        }
+    }
+}
+
+

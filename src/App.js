@@ -13,6 +13,7 @@ import Order from "./features/Order";
 import Campaign from "./features/Campaign";
 import Cart from "./features/Cart";
 import Broadcast from "./features/Broadcast";
+import Ebill from "./features/Ebill";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/campaign" element={<Campaign />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/broadcast" element={<Broadcast />} />
+          <Route path="/ebill" element={<Ebill />} />
         </Routes>
 
         {/* Footer */}
