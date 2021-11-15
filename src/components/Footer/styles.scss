@@ -1,0 +1,12 @@
+.footer{
+    .company__info{
+        &--des{
+            &-name{
+                font-size: 15px;
+            }
+            &-license, &-address{
+                font-size: 14px;
+            }
+        }
+    }
+}

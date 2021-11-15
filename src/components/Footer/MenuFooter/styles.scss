@@ -1,0 +1,31 @@
+.menu__bottom{
+    &--item{
+        width: 180px;
+        &-appendix{
+            a{
+                font-size: 14px;
+                margin-top: 10px;
+                color: black;
+                &:hover{
+                    color: #d51234;
+                    font-weight: 600;
+                }
+                img{
+                    margin-right: 15px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        &-advise{
+            
+            a{
+               color: #d51234;
+               font-weight: bold;
+               font-size: 16px;
+            }
+        }
+        &-box{
+            padding: 5px;
+        }
+    }
+}
