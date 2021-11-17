@@ -1,5 +1,13 @@
+import LiveProduct from "./components/LiveProduct";
+import Slider from "./components/Slider";
+
 function Home(props) {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <Slider />
+      <LiveProduct />
+    </>
+  );
 }
 
 export default Home;

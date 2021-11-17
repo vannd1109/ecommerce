@@ -14,11 +14,24 @@ import Campaign from "./features/Campaign";
 import Cart from "./features/Cart";
 import Broadcast from "./features/Broadcast";
 import Ebill from "./features/Ebill";
+import HeaderTop from "./components/Header/components/HeaderTop";
 
 function App() {
   return (
     <div className="app">
-      <div className="app__container">
+      {/* HeaderTop */}
+      <header
+        className="header-top position-fixed w-100"
+        style={{ backgroundColor: "white", zIndex: "1", height: "90px" }}
+      >
+        <div className="app__container">
+          <HeaderTop />
+        </div>
+      </header>
+      <div
+        className="app__container"
+        style={{ position: "relative", top: "90px" }}
+      >
         {/* Header */}
         <Header />
 

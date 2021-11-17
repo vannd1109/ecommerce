@@ -30,7 +30,7 @@ function HeaderTop(props) {
           </form>
         </Navbar.Collapse>
       </Navbar>
-      <div className="header__top--right mt-2">
+      <div className="header__top--right">
         <ul className="d-flex header__top--list">
           <li className="header__top--item">
             <NavLink to="/order">Tài khoản</NavLink>
@@ -42,7 +42,7 @@ function HeaderTop(props) {
             <NavLink to="/ebill">Tra cứu hóa đơn</NavLink>
           </li>
         </ul>
-        <ul className="d-flex header__top--list justify-content-around mt-3">
+        <ul className="d-flex header__top--list justify-content-around mt-1">
           <li className="header__top--item text-center">
             <AccountCircle className="header__top--icon" />
             <Typography>
