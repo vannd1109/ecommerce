@@ -679,7 +679,7 @@ function Menu(props) {
             className="text-decoration-none ecommerce__link text-uppercase"
             to="/campaign"
           >
-            Hồng sâm chính hãng
+            Giao hàng 2h - 4h
           </NavLink>
           <NavLink
             className="text-decoration-none ecommerce__link text-uppercase"

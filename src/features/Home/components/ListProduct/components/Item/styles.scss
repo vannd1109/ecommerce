@@ -1,0 +1,38 @@
+.product__item{
+    overflow: hidden;
+    border: 1px solid transparent;
+    padding: 10px;
+    &--img{
+        width: 100%;
+    }
+    &--name{
+        font-size: 14px;
+        color: black;
+        line-height: 20px;
+        display: inline-block;
+        margin: 5px 0;
+        &:hover{
+            color: #e41f28;
+        }
+    }
+    &--price{
+        &-percent{
+            color: red;
+            font-weight: bold;
+        }
+        &-salePrice{
+            font-weight: bold;
+            color: black;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        &-sell{
+            font-size: 13px;
+            color: rgb(139, 139, 139);
+            text-decoration: line-through;
+        }
+    }
+    &:hover{
+        border: 1px solid #e41f28;
+    }
+}
